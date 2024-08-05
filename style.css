@@ -18,13 +18,13 @@ body {
   background-size: max(100px, 100vw);
 }
 
-.main .box{
-    height: 644px;
-        width: 100%;
-        opacity: 0.69;
-        position: absolute;
-        top: 0;
-        background-color:black;
+.main .box {
+  height: 644px;
+  width: 100%;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+  background-color: black;
 }
 
 nav {
@@ -157,38 +157,79 @@ section.first > div :nth-child(2) {
   font-size: 21px;
 }
 
-.faq h2{
-    text-align: center;
-    font-size: 48px;
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
 }
 
-.faq{
-    background-color: black;
-    color: white;
-    padding: 34px;
+.faq {
+  background-color: black;
+  color: white;
+  padding: 34px;
 }
-.faqbox :hover{
-    background-color: #414141;
-    color: white;
+.faqbox :hover {
+  background-color: #414141;
+  color: white;
 }
 
 .faqbox svg {
-    filter: invert(1);
+  filter: invert(1);
 }
 
-.faqbox{
-    transition: all 1s ease-out;
-    font-size: 24px;
-    display: flex;
-    background-color: #2d2d2d;
-    justify-content: space-between;
-    padding: 24px;
-    max-width: 40vw;
-    margin: 34px auto;
-    color: white;
-    cursor: pointer;
+.faqbox {
+  transition: all 1s ease-out;
+  font-size: 24px;
+  display: flex;
+  background-color: #2d2d2d;
+  justify-content: space-between;
+  padding: 24px;
+  max-width: 40vw;
+  margin: 34px auto;
+  color: white;
+  cursor: pointer;
 }
-#footer{
-  color:white ;
 
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+
+footer .questions {
+  padding: 34px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+footer {
+  max-width: 90vw;
+  padding: 75px 0;
+}
+
+.footer-item {
+  align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}
+
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
 }
